@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+</head>
+<body>
+    <style>
+        .botao{
+            padding: 20px;
+        }
+    </style>
+    <button onclick="clicado()">Clique em Mim</button>
+
+    <a href="https://www.amazon.com.br">
+        <button>Amazon</button>
+    </a>
+
+    <a href="https://www.amazon.com.br">
+        <button class="botao">
+            <img height="22px" src="/assets/images/Amazon_logo.svg" alt="">
+        </button>
+    </a>
+    <!-- Maneira incorreta -->
+    <!-- <button class="botao">
+        <a href="https://www.amazon.com.br">
+            <img height="22px" src="/assets/images/Amazon_logo.svg" alt="">
+        </a>
+    </button> -->
+
+
+
+
+    <script>
+        function clicado(){
+            alert("clicado")
+        }
+    </script>
+</body>
+</html>

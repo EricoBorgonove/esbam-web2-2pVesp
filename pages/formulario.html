@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+    <fo action="" method="">
+        <h2>Fale Conosco</h2>
+        <section>
+            <h4>Dados Pessois</h4>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" placeholder="Digite o seu nome">
+                <label for="sobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="">
+            </div>
+            <div>
+                <label for="nascimento">Data Nascimento: </label>
+                <input type="date" name="nascimento">
+            </div>
+            <div>
+                <label for="genero">Gênero</label>
+                <input type="radio" name="genero" id=""> Masculino
+                <input type="radio" name="genero" id=""> Feminino
+                <input type="radio" name="genero" id=""> Outros
+                <input type="text" name="" id="" disabled>
+            </div>
+        </section>
+        <section>
+            <h4>Preferências Musicais</h4>
+            <div>
+                <label for="musicas">Gêneros Musicais</label>
+                <input type="checkbox" name="" id="" checked disabled>Rock
+                <input type="checkbox" name="" id="">Pop
+                <input type="checkbox" name="" id="" disabled>Funk
+            </div>
+        </section>
+        <section>
+            <h4>Contatos</h4>
+            <div>
+                <label for="celular">Celular: </label>
+                <input type="number" name="celular" id="">
+                <label for="email">email: </label>
+                <input type="email" name="" id="">
+            </div>
+        </section>
+        <section>
+            <h4>Login</h4>
+            <div>
+                <label for="login">Login: </label>
+                <input type="text" name="login" id="">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha1">
+                <button onclick="verSenha()" id="btsenha">Ver</button>
+            </div>
+        </section>
+    </fo>
+
+    <script>
+        function verSenha(){
+            let senha = document.getElementById("senha1")
+            let btsenha = document.getElementById("btsenha")
+            if (senha.type == "password"){
+                senha.type = "text"
+                btsenha.innerHTML = "Desver"
+            } 
+            else{
+                senha.type = "password"
+                btsenha.innerHTML = "Ver"
+            } 
+        }
+    </script>
+</body>
+</html>
