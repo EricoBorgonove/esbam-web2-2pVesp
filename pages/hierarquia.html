@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div li { /*somente as li dentro de div*/
+            background-color: aquamarine;
+        }
+        div li, span{
+            color: blueviolet;
+        }
+        .oi li{
+            color: blue;
+        }
+    </style>
+
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+    </div>
+    <ul class="oi">
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+    </ul>
+    <span>12</span>
+    <span class="oi">
+        <li>oi</li>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam quos odit ducimus modi soluta dolore quisquam autem consequuntur illo ex ab tempora aliquam, aperiam dignissimos fugiat ad doloremque. Labore.</p>
+    
+    </span>
+</body>
+</html>

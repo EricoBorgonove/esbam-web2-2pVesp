@@ -1,0 +1,52 @@
+/*
+seletores - são estruturas que encapsulam conjunto de regras
+            para serem aplicadas em objetos no html
+
+*{
+    seletor universal
+    -- aplica o conjunto de regras a TODAS as tags do documento
+}
+span{
+    seletor de tags
+    -- aplica o conjunto de regras a todas as tags
+    daquele tipo
+}
+.classe{
+    seletor de classes
+    -- aplica o conjunto de regras, somente para a tag 
+    que possua aquela classe
+}
+#meuId{
+    seletor de ID
+    -- aplica o conjunto de regras somente a Tag dona do ID
+}
+
+
+
+
+*/
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: pink;
+}
+span{
+    background-color: darkcyan;
+}
+p{
+    color: blue;
+}
+.classe{
+    background-color: black;
+    font-weight: 600;
+    color: rgb(196, 231, 196);
+}
+.classe1{
+    padding: 15px;
+}
+#meuSpan{
+    color: blueviolet;
+}
