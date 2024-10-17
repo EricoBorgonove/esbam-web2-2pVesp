@@ -1,0 +1,10 @@
+body{
+    height: 2000px;
+}
+input{
+    margin-top: 5px;
+}
+
+.redInput{
+    border: 2px solid red;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Coisa</title>
+</head>
+<body>
+    <div>
+        <input type="range" name="" id="numeroRange1" min="0" max="100" step="1">
+        <span id="spanRange1">50</span>
+    </div>
+    +
+    <div>
+        <input type="range" name="" id="numeroRange2" min="0" max="100" step="1">
+        <span id="spanRange2">50</span>
+    </div>
+    =
+    <div>
+        <input type="range" name="" id="inputResultado" min="0" max="200" step="1" disabled>
+        <span id="spanResultado"></span>
+    </div>
+
+
+    <script>
+        let numeroRange1 = document.getElementById('numeroRange1')
+        let spanRange1 = document.getElementById('spanRange1')
+        let numeroRange2 = document.getElementById('numeroRange2')
+        let spanRange2 = document.getElementById('spanRange2')
+        let inputResultado = document.getElementById('inputResultado')
+        let spanResultado = document.getElementById('spanResultado')
+
+        function atualizarSpan(){
+            spanRange1.innerHTML = numeroRange1.value
+            spanRange2.innerHTML = numeroRange2.value
+            spanResultado.innerHTML = Number(numeroRange1.value) + Number(numeroRange2.value)
+            inputResultado.value = Number(numeroRange1.value) + Number(numeroRange2.value)
+        }
+        numeroRange1.addEventListener('input', atualizarSpan)
+        numeroRange2.addEventListener('input', atualizarSpan)
+    </script>
+    
+</body>
+</html>

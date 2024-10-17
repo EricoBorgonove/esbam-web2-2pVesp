@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="/assets/css/formulario.css">
 </head>
 <body>
-    <style>
-        body{
-            height: 2000px;
-        }
-    </style>
-    <fo action="" method="">
+
+    <div>
         <h2>Fale Conosco</h2>
         <section>
             <h4>Dados Pessois</h4>
@@ -26,11 +23,11 @@
                 <input type="date" name="nascimento">
             </div>
             <div>
-                <label for="genero">Gênero</label>
-                <input type="radio" name="genero" id=""> Masculino
-                <input type="radio" name="genero" id=""> Feminino
-                <input type="radio" name="genero" id=""> Outros
-                <input type="text" name="" id="" disabled>
+                <label for="generos">Gênero</label>
+                <input type="radio" name="generos" id=""> Masculino
+                <input type="radio" name="generos" id=""> Feminino
+                <input type="radio" name="generos" id=""> Outros
+                <input type="text" name="" id="inputText" disabled>
             </div>
         </section>
         <section>
@@ -56,26 +53,15 @@
             <div>
                 <label for="login">Login: </label>
                 <input type="text" name="login" id="">
-                <label for="senha">Senha: </label>
-                <input type="password" name="senha" id="senha1">
-                <button onclick="verSenha()" id="btsenha">Ver</button>
+                <br>
+                <label for="senha1">Senha: </label>
+                <input type="password"  id="senha1">
+                <label for="senha2">Senha: </label>
+                <input type="password"  id="senha2">               
+                <button onclick="togglePass()" id="btSenha">Ver</button>
             </div>
         </section>
-    </fo>
-
-    <script>
-        function verSenha(){
-            let senha = document.getElementById("senha1")
-            let btsenha = document.getElementById("btsenha")
-            if (senha.type == "password"){
-                senha.type = "text"
-                btsenha.innerHTML = "Desver"
-            } 
-            else{
-                senha.type = "password"
-                btsenha.innerHTML = "Ver"
-            } 
-        }
-    </script>
+    </div>
+    <script src="/assets/js/furmulario.js"></script>
 </body>
 </html>
