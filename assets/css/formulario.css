@@ -6,7 +6,12 @@ input{
 }
 
 .redInput{
+    border-radius: 7px;
     border: 2px solid red;
     color: red;
-    background-color: rgb(228, 137, 137);
+    background-color: rgb(239, 173, 173);
+}
+
+.spanRed{
+    color: red;
 }

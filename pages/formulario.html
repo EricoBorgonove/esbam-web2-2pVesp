@@ -29,6 +29,16 @@
                 <input type="radio" name="generos" id=""> Outros
                 <input type="text" name="" id="inputText" disabled>
             </div>
+            <div>
+                <label for="nacionalidade">Nacionalidade:</label>
+                <select name="nacionalidade" onclick="verEstados()" id="paises">
+                    <option value="" selected></option>
+                </select>
+                <label for="naturalidade" id="labelNat" hidden>Naturalidade:</label>
+                <select name="naturalidade" id="estados" hidden>
+                    <option value="" selected></option>
+                </select>
+            </div>
         </section>
         <section>
             <h4>Preferências Musicais</h4>
@@ -59,6 +69,9 @@
                 <label for="senha2">Senha: </label>
                 <input type="password"  id="senha2">               
                 <button onclick="togglePass()" id="btSenha">Ver</button>
+            </div>
+            <div>
+                <span id="erroSenha" class="spanRed"></span>
             </div>
         </section>
     </div>
