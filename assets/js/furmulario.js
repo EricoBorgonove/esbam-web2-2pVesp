@@ -26,14 +26,12 @@ function togglePass(){
     }
 }
 function conferirSenha(){
-    if (senha1.value == senha2.value){
-        senha2.classList.remove("redInput")
-        console.log ("iguais")
-    }else if (senha2.value){
+    if (senha1.value != senha2.value && senha2.value != ""){
+        senha1.classList.add("redInput")
         senha2.classList.add("redInput")
-        console.log ("diferentes")
-        console.log (senha1.value)
-        console.log (senha2.value)
+    }else{
+        senha2.classList.remove("redInput")
+        senha1.classList.remove("redInput")
     }
 }
 senha1.addEventListener("input", conferirSenha)
