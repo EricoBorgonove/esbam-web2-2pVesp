@@ -231,7 +231,7 @@ let paises = document.getElementById('paises')
 function verPaises(){
     for (let i = 0; i< countries.length; i++){
         let option = document.createElement("option")
-        option.value = countries[i].code
+        option.setAttribute('value', countries[i].code)   
         option.textContent = countries[i].name
         paises.appendChild(option)
     }

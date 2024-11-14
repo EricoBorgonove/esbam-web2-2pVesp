@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(210, 105, 30,0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+}
+button{
+    background-color: chocolate;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+}
+button:hover{
+    background-color: transparent;
+    color: chocolate;
+    border: 1px solid chocolate;
+}
+input{
+    margin: 3px;
+}

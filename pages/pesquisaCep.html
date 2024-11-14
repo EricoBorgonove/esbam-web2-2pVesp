@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/pesquisaCep.css">
+    <title>Pesquisa de CEPs</title>
+</head>
+<body>
+    <main>
+        <h2>Sistema Automático de Busca de CEPs</h2>
+        <div>
+            <label for="labelCep">CEP: </label>
+            <input type="text" name="labelCep" id="inputCep">
+            <button onclick="validarCep()">Pesquisar</button>
+        </div>
+        <hr>
+        <div>
+            <label for="labelLogradouro">Logradouro: </label>
+            <input type="text" name="labelLogradouro" id="logradouro" disabled>
+            <label for="labelBairro">Bairro: </label>
+            <input type="text" name="labelBairro" id="bairro" disabled>
+        </div>
+        <div>
+            <label for="labelCidade">Cidade: </label>
+            <input type="text" name="labelCidade" id="cidade" disabled>
+            <label for="labelestado">Estado: </label>
+            <input type="text" name="labelEstado" id="estado" disabled>
+        </div>
+    </main>
+
+
+    <script src="/assets/js/pesquisaCep.js"></script>
+</body>
+</html>
