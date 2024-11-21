@@ -11,3 +11,26 @@ h1{
     color: black;
     padding: 0px 10px;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+  
+  .text-container {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://st2.depositphotos.com/1008939/10090/i/950/depositphotos_100909022-stock-photo-portrait-of-black-people.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+  }
+.bg-black{
+    margin: 0;
+    background-color: black;
+    padding: 40px 0px;
+}
