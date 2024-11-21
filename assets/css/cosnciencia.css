@@ -21,7 +21,7 @@ body{
     font-size: 100px;
     font-weight: bold;
     color: transparent;
-    background-image: url('https://st2.depositphotos.com/1008939/10090/i/950/depositphotos_100909022-stock-photo-portrait-of-black-people.jpg');
+    background-image: url('https://gife.org.br/wp/media/2021/07/negraspasseata_005-scaled.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,5 +32,11 @@ body{
 .bg-black{
     margin: 0;
     background-color: black;
-    padding: 40px 0px;
+    padding: 60px 0px;
+}
+.separacao{
+    text-align: center;
+}
+.oi:hover{
+    zoom: 1.1;
 }
